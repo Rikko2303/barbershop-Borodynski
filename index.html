@@ -1,0 +1,154 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Барбершоп Бородинский</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <meta charset="utf-8">
+    <link href="css/normalise.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script defer src="js/java.js">
+    </script>
+    
+  </head>
+  <body>
+    <header class="header1">
+      <div class="container1 clearfix">
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Информация</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Новости</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Прайс-лист</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Магазин</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="userbox">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container1 clearfix">
+        <div class="logo">
+          <img src="img/BORODINSKI Logo.png" alt="Borodinski.jpg">
+        </div>
+        <section class="cont-features clearfix">
+          <div class="feature">
+            <div class="feature-name">Быстро</div>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+          </div>
+          <div class="feature">
+            <div class="feature-name">Круто</div>
+            <p>Забудьте, как вы стриглись раньше.<br>
+             Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-name">Дорого</div>
+            <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве<br>
+            цена не дает определенный статус?</p>
+          </div>
+        </section>
+        <div class="info clearfix">
+          <section class="news">
+            <h2>Новости</h2>
+            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time>25 сентября</time>
+            <p>В нашей команде пополнение, борис:"Бритва" Стригунец.Обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time>19 сентября</time>
+            <a class="newsbtn btn" href="#">Все новости</a>    
+          </section>
+          <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <img class="gallery-image" src="img/1.jpg" alt="Photo1.jpg" width="285" height="165">
+            <button class="slide btn left_arrow" onClick = "javascript: left_arrow()" >Назад</button>
+            <button class="slide btn rigth_arrow" onClick = "javascript: right_arrow()" >Вперед</button>
+          </section>
+        </div>
+        <div class="info clearfix">
+          <section class="contacts">
+            <h2>Контактная информация</h2>
+            <div class="adress">Барбершоп "Бородинский"<br>
+                Адрес:Г.Санкт-Петербург Е.Конюшенная, Д.19/8<br>
+                Телефон:+7 (495) 666-02-66
+             </div>
+             <div class="worktime">Время работы"<br>
+               ПН-ПТ: С 10:00 до 22:00<br>
+               СБ-ВС: С 10:00 до 19:00
+             </div>
+             <a class="btn map-on" href="#">Как проехать</a>
+             <a class="btn" href="#">Обратная связь</a>
+          </section>
+          <form class="registration">
+            <h2>Записаться</h2>
+            <div>Укажите желаемую дату и мы свяжемся с вами для подтверждения брони</div>
+            <input type="text" value="" placeholder="Дата">
+            <input type="text"  value="" placeholder="Время">
+            <input type="text"  value="" placeholder="Ваше Имя">
+            <input type="text"  value="" placeholder="Телефон">
+            <button class="btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+     <div class="container1 clearfix">
+       <section class="footer-contacts">
+         <div>
+         	Барбершоп "Бородинский"<br>
+         	Адрес:Г.Санкт-Петербург Е.Конюшенная, Д.19/8<br>
+         	<a class="location" href="#">Как нас найти?</a><br>
+         	Телефон:+7 (495) 666-02-66
+         </div>
+       </section>
+       <section class="social">
+       	 <div>
+       	   Давайте дружить
+       	 </div>
+       	 <a class="vk">VK</a>
+       	 <a class="fb">FB</a>
+       	 <a class="inst">IN</a>
+       </section>
+       <section class="copyright">
+       	  <div>
+       	  	Разработано:
+       	  </div>
+       	  <a class="btn" href="#">HTMLACADEMY.RU</a>
+       </section>
+     </div>
+    </footer>
+    <div class="modal-login">
+      <button class="modal-login-close" type="button" title="Закрыть">Закр</button>
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="#" method="post">
+        <input class="modal-username" name="login" type="text" placeholder="Ваш логин">
+        <input class="modal-password" name="password" type="password" placeholder="Ваш пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="style-checkbox"></span>
+            Запомните меня
+        </label>
+          <a class="forget" href="#">Я забыл пароль!</a>
+          <button class="btn" type="submit">Войти</button>
+        </form>
+        
+    </div>
+    <div class="modal-map">
+      <button class="modal-map-x" type="button" title="Закрыть">
+          Закр</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299551772968!2d30.321988958293005!3d59.93879419546905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1466535386390" width="766" height="550" frameborder="0" style="border:8px solid white" allowfullscreen></iframe>
+
+    </div>
+  </body>
+ </html>
